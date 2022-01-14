@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>소개팅 모집 예제</title>
+    <title>조건 연산자 예제</title>
 </head>
 <body>
     <script>
-        //20대의 여성이면 결과값이 true, 아니면 false 출력
-        let gender = "여성";
-        let age = 30;
+        // 짝수, 홀수를 판정하는 프로그램
+        //입력
+        let num = 11;
         let result;
-
         //연산
-        result = (gender == "여성") && (age >= 20) && (age <30);
+        result = (num % 2 == 0) ? "짝수입니다." : "홀수입니다.";
         //출력
-        document.write("결과 : " + result)
+        document.write("결과는" + result);
+
     </script>
     
 </body>

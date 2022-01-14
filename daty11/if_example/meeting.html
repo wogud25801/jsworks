@@ -8,16 +8,21 @@
 </head>
 <body>
     <script>
-        //20대의 여성이면 결과값이 true, 아니면 false 출력
+        /*20대의 여성이면 "모집 대상입니다."를 출력하고
+          아니면 "모집 대상이 아닙니다."*/
         let gender = "여성";
-        let age = 30;
+        let age = 21;
         let result;
 
         //연산
         result = (gender == "여성") && (age >= 20) && (age <30);
-        //출력
-        document.write("결과 : " + result)
-    </script>
+        if(result){
+            document.write("모집 대상입니다.");
+        }
+        else{
+            document.write("모집 대상이 아닙니다.");
+        }
+        </script>
     
 </body>
 </html>
